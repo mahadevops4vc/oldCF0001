@@ -4,15 +4,5 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
+include_recipe 'hello::webserver'
 
-package 'git' do
-  action :install
-end
-
-package 'tree' do
-  action :install
-end
-
-package 'wget' do
-  action :install
-end
