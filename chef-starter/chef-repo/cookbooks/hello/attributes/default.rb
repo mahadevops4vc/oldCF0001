@@ -1,12 +1,15 @@
 
 
 
-if node['platform'] == 'ubuntu'
-default['praveenwebserver_name']='tomcat7'
-end
+if node['platform'] =='ubuntu'
+    default['hello']['harshpakname'] = 'apache2'
+  end
+  
+  if node['platform'] =='redhat'
+    default['hello']['harshpakname'] = 'httpd'
+  end
 
-if node['platform'] == 'redhat'
-    default['praveenwebserver_name']='tomcat'
-end
+  default['hello']['foreachnikil'] = ['git','tree','wget']
 
-    
+
+  default['paltform'] = 'gopi'
